@@ -16,18 +16,27 @@ install scobra from https://github.com/mauriceccy/scobra
 Example to obtain FBA solutions and growth curves:
 
 #From saved pickle file
+
 In [1]: import pickle 
+
 In [2]: f = open('normal_final.pkl','rb')
+
 In [3]: normal_growth = pickle.load(f)
+
 In [4]: f.close()
+
 In [5]: f = open('stress_final.pkl','rb')
+
 In [6]: water_limited_growth = pickle.load(f)
+
 In [7]: f.close()
 
 #to run
 
 In [1]: import rice_growth_model_with_WOFOST
+
 In [2]: normal_growth = rice_growth_model_with_WOFOST.Growth() #use WOFOST_rates_one_plant.csv
+
 In [3]: water_limited_growth = rice_growth_model_with_WOFOST.Growth() # use WOFOST_rates_one_plant_stress.csv (reload)
 
 
