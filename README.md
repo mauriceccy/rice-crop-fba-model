@@ -4,7 +4,7 @@ Codes to simulate growth under normal and stress conditions
 
 1. Install cobra version = 0.4.1, pandas version = 0.13.1 or 0.17.1, xlrd version = 0.9.0
 2. Install other packages like scipy, matplotlib, libsbml, lxml etc. (see scobra documentation)
-3. Use the existing Scobra with this code (recommended, no installation required)
+3. Use the existing Scobra with this code (recommended, unzip, no installation required)
 
 Or
 
