@@ -11,22 +11,6 @@ Codes to simulate growth under normal and stress conditions
 
 Example to obtain FBA solutions and growth curves:
 
-#From saved pickle file
-
-In [1]: import pickle 
-
-In [2]: f = open('normal_final.pkl','rb')
-
-In [3]: normal_growth = pickle.load(f)
-
-In [4]: f.close()
-
-In [5]: f = open('stress_final.pkl','rb')
-
-In [6]: water_limited_growth = pickle.load(f)
-
-In [7]: f.close()
-
 #to run
 
 In [1]: import rice_growth_model_with_WOFOST
