@@ -20,6 +20,14 @@ In [2]: normal_growth = rice_growth_model_with_WOFOST.Growth() #use WOFOST_rates
 In [3]: water_limited_growth = rice_growth_model_with_WOFOST.Growth() # use WOFOST_rates_one_plant_stress.csv (reload)
 
 
-#growth curves
+#to load
 
-In [1]: plot = rice_growth_model_with_WOFOST.plot_results(normal_growth,water_limited_growth)
+In [1]: import pickle
+In [2]: f = open('normal.pkl','rb')
+In [3]: normal_growth  = pickle.load(f)
+In [4]: f.close()
+
+
+In [5]: f = open('stress.pkl','rb')
+In [6]: water_limited_growth  = pickle.load(f)
+In [7]: f.close()
