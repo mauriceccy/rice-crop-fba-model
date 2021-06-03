@@ -10,7 +10,7 @@ import pandas as pd
 
 def Growth():
 
-    m = scobra.Model('C:/Users/rahul/Google Drive/Work/misc/rice/rice_code/Rice_dFBA/Os2384_MT_Final.xls')
+    m = scobra.Model('Os2384_MO.xls')
     tx = {i:(0,0) for i in m.Reactions() if '_tx' in i}
     biomass = {i:(0,0) for i in m.Reactions() if '_biomass' in i}
     
